@@ -1,0 +1,88 @@
+
+.cardBox{
+    background-color: #e9967a6e !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+.card{
+    width: 25rem;
+    }
+.cardImg{
+    width: 100%;
+    height: 277px;
+    object-fit: contain;
+    background-color: black;
+}
+.cardBody{
+    display: flex;
+    justify-content: space-between;
+}
+.navIcon{
+    width: 40px;
+}
+.navContainer{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
+}
+.navSpan{
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 14px;
+}
+.card-title{
+    font-weight: bold;
+    font-size: 28px;
+}
+.cardFooter{
+    font-size: 20px;
+    font-weight: bold;
+}
+.numbers{
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 30px;
+}
+.btn-outline-dark{
+    font-size: 20px;
+}
+.list-group-item:hover{
+    cursor: pointer;
+    background-color: #bc93e26e;
+}
+.bg-success {
+    color: white;
+}
+.cursor{
+    cursor: no-drop;
+}
+.doneH1{
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.done{
+    font-size: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-body{
+    display: flex;
+    justify-content: space-between;
+}
+.bravo{
+    width: 425px;
+}
+.btn{
+    cursor: pointer;
+}
+.restartButton{
+    display: flex;
+    justify-content: center;
+}
