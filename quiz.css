@@ -1,5 +1,4 @@
-
-.cardBox{
+.cardBox {
     background-color: #e9967a6e !important;
     min-height: 100vh;
     display: flex;
@@ -8,81 +7,144 @@
     font-family: 'Amatic SC', cursive;
     font-size: 20px;
 }
-.card{
+
+.card {
     width: 25rem;
-    }
-.cardImg{
+}
+
+.cardImg {
     width: 100%;
     height: 277px;
     object-fit: contain;
     background-color: black;
 }
-.cardBody{
+
+.cardBody {
     display: flex;
     justify-content: space-between;
 }
-.navIcon{
+
+.navIcon {
     width: 40px;
 }
-.navContainer{
+
+.navContainer {
     display: flex;
     width: 100vw;
     justify-content: center;
     font-family: 'Amatic SC', cursive;
 }
-.navSpan{
+
+.navSpan {
     font-size: 36px;
     font-weight: bold;
     margin-right: 14px;
 }
-.card-title{
+
+.card-title {
     font-weight: bold;
     font-size: 28px;
 }
-.cardFooter{
+
+.cardFooter {
     font-size: 20px;
     font-weight: bold;
 }
-.numbers{
+
+.numbers {
     color: blueviolet;
     font-weight: bold;
     font-size: 30px;
 }
-.btn-outline-dark{
+
+.btn-outline-dark {
     font-size: 20px;
 }
-.list-group-item:hover{
+
+.list-group-item:hover {
     cursor: pointer;
     background-color: #bc93e26e;
 }
+
 .bg-success {
     color: white;
 }
-.cursor{
+
+.cursor {
     cursor: no-drop;
 }
-.doneH1{
+
+.doneH1 {
     font-size: 35px;
     font-weight: bold;
     display: flex;
     justify-content: center;
 }
-.done{
+
+.done {
     font-size: 35px;
     display: flex;
     justify-content: space-evenly;
 }
-.card-body{
+
+.card-body {
     display: flex;
     justify-content: space-between;
 }
-.bravo{
+
+.bravo {
     width: 425px;
 }
-.btn{
+
+.btn {
     cursor: pointer;
 }
-.restartButton{
+
+.restartButton {
     display: flex;
     justify-content: center;
+}
+.restartBtn{
+    height: 71px;
+    width: 149px;
+    font-size: 29px;
+    background-color: #0000ff6e;
+    color: white;
+    font-weight: bold;
+    border-radius: 9%;
+}
+
+/* responsive content */
+
+@media only screen and (max-width: 900px){
+.card{
+    width: auto;
+}
+.bravo{
+    width: 317px;
+}
+.endBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.progress{
+    width: 318px;
+    height: 30px;
+    font-size: 24px;
+}
+.done{
+    display: block;
+    text-align: center;
+}
+.restartBtn{
+    height: 71px;
+    width: 149px;
+    font-size: 29px;
+    background-color: #0000ff6e;
+    color: white;
+    font-weight: bold;
+    border-radius: 9%;
+}
+
 }

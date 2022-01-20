@@ -1,5 +1,6 @@
 let currentQuestion = 0; //Globale Variable, um das erste JSON aus Array anzeigen zu können. 0, weil wir im Array mit 0 für die erste Stelle/erstes Array beginnen
-
+let audioSuccess = new Audio('./audio/true.mp3');
+let audioFail = new Audio('./audio/false.mp3');
 
 let questions = [
     {
@@ -93,6 +94,7 @@ function answer(currAnswer) { //Variable wird in die Klammer gegeben,da es 3 Ant
         console.log('Richtige Antwort!');
         document.getElementById(currAnswer).classList.add('bg-success'); //der button färbt sich grün durch css class
         rightAnswer++;
+        audioSuccess.play();
 
     } else {
         document.getElementById('switchImg').src = './img/false.png';
@@ -100,6 +102,8 @@ function answer(currAnswer) { //Variable wird in die Klammer gegeben,da es 3 Ant
         console.log('Falsche Antwort!'); //wenn die Nummern nicht übereinstimmen, ist es die falsche Antwort
         document.getElementById(currAnswer).classList.add('bg-danger'); //Dann färbt sich button rot
         document.getElementById(idOfRightAnswer).classList.add('bg-success');  //wenn die Antwort falsch ist, färbe mir die richtige Antwort rot
+     
+        audioFail.play();
     }
 
     document.getElementById('nextQuestion').disabled = false;  //button soll mit disabled statisch werden, solange keine Antwort geklickt wird
@@ -131,3 +135,4 @@ function restartGame(){
 
     init();
 }
+
